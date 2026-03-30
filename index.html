@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stellar Movie House – Cebu’s cozy private movie rental & viewing spot. ₱350 for 2 people, free popcorn, aircon, couches. Open until 3 AM.">
+    <meta name="description" content="Stellar Movie House – Cebu's cozy private movie rental & viewing spot. ₱350 for 2 people, free popcorn, aircon, couches. Open until 3 AM.">
     <title>Stellar Movie House | Private Movie Rental in Cebu</title>
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Small custom tweaks */
-        .hero-bg { background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; }
+        .hero-bg { background-image: url('images/stellar%20entrance.jpeg'); background-size: cover; background-position: center; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -24,16 +23,17 @@
                 <a href="#reviews" class="hover:text-yellow-600">Reviews</a>
                 <a href="#contact" class="hover:text-yellow-600">Contact</a>
             </div>
-            <!-- Mobile menu button (simple version) -->
             <button id="menu-btn" class="md:hidden text-2xl">☰</button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-bg text-white bg-black bg-opacity-60">
-        <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+    <!-- Hero Section (stellar entrance.jpeg as background with dark overlay) -->
+    <header class="relative">
+        <div class="absolute inset-0 hero-bg"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-20 text-center text-white">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Private Cinema in Cebu</h1>
-            <p class="text-xl md:text-2xl mb-8">Aircon • Plush Couches • Free Popcorn • Open until 3 AM</p>
+            <p class="text-xl md:text-2xl mb-8">Aircon • Plush Couches • Free Popcorn • Open until 3 AM</p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="tel:+63324159426" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-lg transition">
                     📞 Call Now
@@ -50,23 +50,55 @@
     <section class="bg-white border-b">
         <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div>📍 <strong>Address:</strong> 8V5W+X2G, General Maxilom Ave, Cebu City (Raintree Mall)</div>
-            <div>🕒 <strong>Hours:</strong> Open · Closes 3 AM</div>
+            <div>🕒 <strong>Hours:</strong> Open · Closes 3 AM</div>
             <div>📞 <strong>Phone:</strong> <a href="tel:+63324159426" class="text-blue-600">(032) 415 9426</a></div>
         </div>
     </section>
 
-    <!-- About / Experience -->
+    <!-- About / Experience (stellar room big.jpeg placed here) -->
     <section id="about" class="max-w-6xl mx-auto px-4 py-16">
         <h2 class="text-3xl font-bold text-center mb-8">The Stellar Experience</h2>
         <p class="text-lg text-center max-w-3xl mx-auto leading-relaxed">
             Escape the crowd. At Stellar Movie House, you rent a private viewing room equipped with 
-            <strong>air‑conditioning, soft couches, and free popcorn</strong>. Whether it’s a date night, 
+            <strong>air‑conditioning, soft couches, and free popcorn</strong>. Whether it's a date night, 
             a group hangout, or a solo movie marathon, we keep the seats comfy and the prices friendly.
         </p>
+        <div class="mt-8 flex justify-center">
+            <img 
+                src="images/stellar%20room%20big.jpeg" 
+                alt="Spacious private movie room with comfortable couches at Stellar Movie House" 
+                class="rounded-xl shadow-lg w-full max-w-2xl object-cover"
+            >
+        </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="bg-gray-100">
+    <!-- Our Rooms Gallery (stellar room big + stellar room small) -->
+    <section class="bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Rooms</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="text-center">
+                    <img 
+                        src="images/stellar%20room%20big.jpeg" 
+                        alt="Big private movie room at Stellar Movie House" 
+                        class="rounded-xl shadow-lg w-full h-72 object-cover"
+                    >
+                    <p class="mt-3 font-bold text-lg">Big Room</p>
+                </div>
+                <div class="text-center">
+                    <img 
+                        src="images/stellar%20room%20small.jpeg" 
+                        alt="Cozy small private movie room at Stellar Movie House" 
+                        class="rounded-xl shadow-lg w-full h-72 object-cover"
+                    >
+                    <p class="mt-3 font-bold text-lg">Small Room</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing (stellar food.jpeg placed here) -->
+    <section id="pricing">
         <div class="max-w-6xl mx-auto px-4 py-16">
             <h2 class="text-3xl font-bold text-center mb-12">Simple, Honest Pricing</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -86,11 +118,16 @@
                 <div class="bg-white p-6 rounded-xl shadow text-center">
                     <h3 class="text-xl font-bold mb-2">Weekday Promos</h3>
                     <p class="text-lg mb-4">Ask staff for daily deals!</p>
-                    <p class="text-gray-600">Some days we run “2 movies for…” specials – perfect for marathons.</p>
+                    <p class="text-gray-600">Some days we run "2 movies for…" specials – perfect for marathons.</p>
                 </div>
-                <!-- Add-ons -->
+                <!-- Add-ons with food image -->
                 <div class="bg-white p-6 rounded-xl shadow text-center">
                     <h3 class="text-xl font-bold mb-2">Add‑Ons</h3>
+                    <img 
+                        src="images/stellar%20food.jpeg" 
+                        alt="Popcorn and snacks available at Stellar Movie House" 
+                        class="rounded-lg w-full h-40 object-cover my-4"
+                    >
                     <ul class="space-y-2 mt-4">
                         <li>🍿 Extra popcorn – ₱30</li>
                         <li>🥤 Drinks – ₱25</li>
@@ -106,7 +143,7 @@
         <h2 class="text-3xl font-bold text-center mb-12">What Customers Say <span class="text-yellow-500">(4.1/5 from 163 reviews)</span></h2>
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-lg shadow">
-                <p class="italic">"They have a pretty good deal. It’s Php 350 for one movie which will be good for two people, and they provide some free popcorn…"</p>
+                <p class="italic">"They have a pretty good deal. It's Php 350 for one movie which will be good for two people, and they provide some free popcorn…"</p>
                 <p class="mt-4 font-bold">– Myeah Malalis ⭐⭐⭐⭐⭐</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
@@ -122,7 +159,7 @@
             <!-- Form -->
             <div>
                 <h2 class="text-3xl font-bold mb-6">Reserve or Inquire</h2>
-                <p class="mb-6">Send us a message or call **(032) 415 9426**. We’ll confirm your slot quickly.</p>
+                <p class="mb-6">Send us a message or call <strong>(032) 415 9426</strong>. We'll confirm your slot quickly.</p>
                 <form action="https://formspree.io/f/mreoqgdv" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow">
                     <div>
                         <label class="block font-bold mb-1">Name</label>
@@ -143,7 +180,7 @@
                     <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded w-full transition">
                         Send Message
                     </button>
-                    <p class="text-xs text-gray-500 text-center">*You’ll get a reply via email or phone.</p>
+                    <p class="text-xs text-gray-500 text-center">*You'll get a reply via email or phone.</p>
                 </form>
             </div>
             <!-- Map -->
@@ -151,11 +188,10 @@
                 <h2 class="text-3xl font-bold mb-6">Find Us</h2>
                 <div class="bg-white p-2 rounded shadow h-64 md:h-80">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125586.52182756299!2d123.84829300000003!3d10.375522791270233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9994f12dd56a5%3A0x23107e5b8463a87a!2sGeneral%20Maxilom%20Ave%20%26%20Raintree%20Mall%20Dr%2C%20Capitol%20Site%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1774852033892!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125586.52182756299!2d123.84829300000003!3d10.375522791270233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9994f12dd56a5%3A0x23107e5b8463a87a!2sGeneral%20Maxilom%20Ave%20%26%20Raintree%20Mall%20Dr%2C%20Capitol%20Site%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1774852033892!5m2!1sen!2sph" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    </iframe>
-                    
                 </div>
                 <p class="mt-4 text-center font-bold">📍 Raintree Mall, General Maxilom Ave, Cebu City, 6000 Cebu</p>
             </div>
@@ -172,7 +208,7 @@
         const btn = document.getElementById('menu-btn');
         const nav = document.querySelector('nav > div');
         btn.addEventListener('click', () => {
-            alert('Tip: For production, replace this alert with a real mobile menu toggle logic or use Tailwind’s official responsive menu example.');
+            alert('Tip: For production, replace this alert with a real mobile menu toggle logic.');
         });
     </script>
 </body>
