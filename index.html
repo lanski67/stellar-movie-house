@@ -8,7 +8,11 @@
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-bg { background-image: url('images/stellar%20entrance.jpeg'); background-size: cover; background-position: center; }
+        .hero-bg { 
+            background-image: url('images/stellar-entrance.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -27,7 +31,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section (stellar entrance.jpeg as background with dark overlay) -->
+    <!-- Hero Section -->
     <header class="relative">
         <div class="absolute inset-0 hero-bg"></div>
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -55,41 +59,41 @@
         </div>
     </section>
 
-    <!-- About / Experience (stellar room big.jpeg placed here) -->
+    <!-- About / Experience -->
     <section id="about" class="max-w-6xl mx-auto px-4 py-16">
         <h2 class="text-3xl font-bold text-center mb-8">The Stellar Experience</h2>
-        <p class="text-lg text-center max-w-3xl mx-auto leading-relaxed">
+        <p class="text-lg text-center max-w-3xl mx-auto leading-relaxed mb-10">
             Escape the crowd. At Stellar Movie House, you rent a private viewing room equipped with 
             <strong>air‑conditioning, soft couches, and free popcorn</strong>. Whether it's a date night, 
             a group hangout, or a solo movie marathon, we keep the seats comfy and the prices friendly.
         </p>
-        <div class="mt-8 flex justify-center">
+        <div class="flex justify-center">
             <img 
-                src="images/stellar%20room%20big.jpeg" 
+                src="images/stellar-room-big.jpeg" 
                 alt="Spacious private movie room with comfortable couches at Stellar Movie House" 
-                class="rounded-xl shadow-lg w-full max-w-2xl object-cover"
+                class="rounded-2xl shadow-xl w-full max-w-3xl object-cover"
             >
         </div>
     </section>
 
-    <!-- Our Rooms Gallery (stellar room big + stellar room small) -->
+    <!-- Our Rooms Gallery -->
     <section class="bg-gray-100">
         <div class="max-w-6xl mx-auto px-4 py-16">
             <h2 class="text-3xl font-bold text-center mb-8">Our Rooms</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-2 gap-6">
                 <div class="text-center">
                     <img 
-                        src="images/stellar%20room%20big.jpeg" 
+                        src="images/stellar-room-big.jpeg" 
                         alt="Big private movie room at Stellar Movie House" 
-                        class="rounded-xl shadow-lg w-full h-72 object-cover"
+                        class="rounded-2xl shadow-xl w-full h-72 object-cover"
                     >
                     <p class="mt-3 font-bold text-lg">Big Room</p>
                 </div>
                 <div class="text-center">
                     <img 
-                        src="images/stellar%20room%20small.jpeg" 
+                        src="images/stellar-room-small.jpeg" 
                         alt="Cozy small private movie room at Stellar Movie House" 
-                        class="rounded-xl shadow-lg w-full h-72 object-cover"
+                        class="rounded-2xl shadow-xl w-full h-72 object-cover"
                     >
                     <p class="mt-3 font-bold text-lg">Small Room</p>
                 </div>
@@ -97,7 +101,7 @@
         </div>
     </section>
 
-    <!-- Pricing (stellar food.jpeg placed here) -->
+    <!-- Pricing -->
     <section id="pricing">
         <div class="max-w-6xl mx-auto px-4 py-16">
             <h2 class="text-3xl font-bold text-center mb-12">Simple, Honest Pricing</h2>
@@ -124,9 +128,9 @@
                 <div class="bg-white p-6 rounded-xl shadow text-center">
                     <h3 class="text-xl font-bold mb-2">Add‑Ons</h3>
                     <img 
-                        src="images/stellar%20food.jpeg" 
+                        src="images/stellar-food.jpeg" 
                         alt="Popcorn and snacks available at Stellar Movie House" 
-                        class="rounded-lg w-full h-40 object-cover my-4"
+                        class="rounded-xl w-full h-40 object-cover my-4"
                     >
                     <ul class="space-y-2 mt-4">
                         <li>🍿 Extra popcorn – ₱30</li>
@@ -206,9 +210,8 @@
     <!-- Simple mobile menu script -->
     <script>
         const btn = document.getElementById('menu-btn');
-        const nav = document.querySelector('nav > div');
         btn.addEventListener('click', () => {
-            alert('Tip: For production, replace this alert with a real mobile menu toggle logic.');
+            alert('Tip: swap this alert for a real mobile menu toggle when you’re ready.');
         });
     </script>
 </body>
